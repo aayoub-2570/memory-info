@@ -14,6 +14,8 @@ npx cap sync
 <docgen-index>
 
 * [`echo(...)`](#echo)
+* [`getRAMUsage()`](#getramusage)
+* [Interfaces](#interfaces)
 
 </docgen-index>
 
@@ -33,5 +35,28 @@ echo(options: { value: string; }) => Promise<{ value: string; }>
 **Returns:** <code>Promise&lt;{ value: string; }&gt;</code>
 
 --------------------
+
+
+### getRAMUsage()
+
+```typescript
+getRAMUsage() => Promise<RAMUsage>
+```
+
+**Returns:** <code>Promise&lt;<a href="#ramusage">RAMUsage</a>&gt;</code>
+
+--------------------
+
+
+### Interfaces
+
+
+#### RAMUsage
+
+| Prop               | Type                |
+| ------------------ | ------------------- |
+| **`totalRAM`**     | <code>number</code> |
+| **`availableRAM`** | <code>number</code> |
+| **`usedRAM`**      | <code>number</code> |
 
 </docgen-api>
